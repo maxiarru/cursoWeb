@@ -10,36 +10,34 @@
       <h1>Huellitas</h1>
       <img src="../img/HuellitaLogo.png" class="LogoPrincipal" />
     </header>
-    <nav>
-      <div class="menu">
-        <ul>
-          <li><a href="index.html">¿Quienes Somos?</a></li>
-          <li><a href="comoAdoptar.html">Como Adoptar</a></li>
-          <li>Dar en Adopcion</li>
-          <li><a href="historias.html">Historias</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-      <hr />
-      <div class="contenido">
-        <h2>No importa el motivo, ingresa ese animalito que necesita amor.</h2>
-        <form action="/cargar-mascota" method="post">
-          <label for="nombre">Nombre de la mascota:</label><br />
-          <input type="text" id="nombre" name="nombre" required /><br />
-          <label for="nombre">Datos:</label><br />
-          <input type="text" id="datos" name="datos" required /><br />
-          <label for="nombre">Gustos:</label><br />
-          <input type="text" id="datos" name="datos" required /><br /><br />
-          <input
-            type="file"
-            id="mascota"
-            name="mascota"
-            accept="image/*"
-          /><br /><br />
-          <input type="submit" value="Enviar" />
-        </form>
-      </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">¿Quienes Somos?</a></li>
+        <li><a href="comoAdoptar.html">Como Adoptar</a></li>
+        <li>Dar en Adopcion</li>
+        <li><a href="historias.html">Historias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
+    <hr />
+    <div class="contenido">
+      <h2>No importa el motivo, ingresa ese animalito que necesita amor.</h2>
+      <form action="/cargar-mascota" method="post">
+        <label for="nombre">Nombre de la mascota:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br />
+        <label for="nombre">Datos:</label><br />
+        <input type="text" id="datos" name="datos" required /><br />
+        <label for="nombre">Gustos:</label><br />
+        <input type="text" id="datos" name="datos" required /><br /><br />
+        <input
+          type="file"
+          id="mascota"
+          name="mascota"
+          accept="image/*"
+        /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>
     </footer>

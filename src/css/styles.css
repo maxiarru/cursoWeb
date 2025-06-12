@@ -38,11 +38,6 @@ p {
   margin: 15px;
 }
 
-nav {
-  width: 100vw;
-  min-height: 75vh;
-}
-
 ul {
   margin: 2px;
 }
@@ -64,12 +59,14 @@ li a:hover {
 /* Selectores de Clase */
 .menu {
   width: 25vw;
+  height: 120px;
   padding: 2px;
   margin: 15px 0px 15px 0px;
 }
 
 .contenido {
   width: 75vw;
+  min-height: 55vh;
   padding: 5px;
   margin-left: 5px;
 }
