@@ -2,6 +2,7 @@
 
 Proyecto para el curso "Desarrollador web" de CoderHouse.
 
+**Requerimientos**
 Crear el menú de navegación y 5 archivos HTML para cada sección del sitio web, aplica entre estos los enlaces relativos y escribe con etiquetas semánticas. Deberás incluir:
 Una lista no ordenada con el menú principal del sitio web con los nombres de cada una de las secciones y replicarlo en las mismas.
 
