@@ -3,10 +3,10 @@
 }
 /* Selectores de Elemento */
 html {
-  height: 100vh; /* Fondo cálido claro */
+  height: 100vh;
 }
 header {
-  background-color: #bee1e6; /* Celeste amigable */
+  background-color: #bee1e6;
   height: 75px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -14,7 +14,7 @@ header {
 }
 
 footer {
-  background-color: #e1f7fa; /* Verde pastel */
+  background-color: #e1f7fa;
   color: #333;
   text-align: center;
   padding: 5px;
