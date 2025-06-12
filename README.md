@@ -28,6 +28,7 @@ El proyecto debe incluir:
 
 ## 📁 Estructura del proyecto
 
+```plaintext
 cursoWeb/
 └── Huellitas/
     ├── .git/
