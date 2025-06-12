@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+}
+/* Selectores de Elemento */
+html {
+  height: 100vh; /* Fondo cálido claro */
+}
+header {
+  background-color: #bee1e6; /* Celeste amigable */
+  height: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40%;
+}
+
+footer {
+  background-color: #e1f7fa; /* Verde pastel */
+  color: #333;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+img {
+  width: 50px;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+h2 {
+  margin-bottom: 5px;
+  color: #4a4e69;
+}
+
+p {
+  margin: 15px;
+}
+
+nav {
+  width: 100vw;
+  min-height: 80vh;
+}
+
+ul {
+  margin: 2px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+li a {
+  color: #027688;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #026473;
+  text-decoration: underline;
+}
+
+/* Selectores de Clase */
+.menu {
+  width: 25vw;
+  padding: 2px;
+  margin: 15px 0px 15px 0px;
+}
+
+.contenido {
+  width: 75vw;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.LogoPrincipal {
+  height: 30px;
+  width: 30px;
+  margin-left: 10%;
+}
+.icon {
+  height: 18px;
+  width: 20px;
+}
+.linkContacto {
+  color: #027688;
+  text-decoration: none;
+}
+.linkContacto:hover {
+  color: #026473;
+  text-decoration: underline;
+}
+
+/* Selectores de ID */
+#idHistoria-subtitulo {
+  color: #4a4e69;
+  margin-left: 10px;
+}
+
+#idAdoptar-subtitulo {
+  color: #4a4e69;
+  margin: 5px 1px 5px 5px;
+  font-family: cursive;
+}
