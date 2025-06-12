@@ -28,14 +28,20 @@ El proyecto debe incluir:
 
 ## 📁 Estructura del proyecto
 
-```plaintext
 cursoWeb/
-├── index.html
-├── contacto.html
-├── servicios.html
-├── nosotros.html
-├── galeria.html
-├── css/
-│   └── estilos.css
-└── img/
-    └── logo.png
+└── Huellitas/
+    ├── .git/
+    ├── README.md
+    └── src/
+        ├── css/
+        │   └── style.css
+        ├── img/
+        │   └── (imágenes del sitio)
+        ├── pag/
+        │   ├── index.html
+        │   ├── contacto.html
+        │   ├── servicios.html
+        │   ├── nosotros.html
+        │   └── galeria.html
+        └── wireframes/
+            └── (archivos relacionados al diseño inicial)
