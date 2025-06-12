@@ -1,16 +1,41 @@
-# cursoWeb
+# 🌐 cursoWeb
 
-Proyecto para el curso "Desarrollador web" de CoderHouse.
+Repositorio del proyecto realizado para el curso **"Desarrollador Web"** de [CoderHouse](https://www.coderhouse.com/).
 
-Crear el menú de navegación y 5 archivos HTML para cada sección del sitio web, aplica entre estos los enlaces relativos y escribe con etiquetas semánticas. Deberás incluir:
-Una lista no ordenada con el menú principal del sitio web con los nombres de cada una de las secciones y replicarlo en las mismas.
+## 📚 Objetivo del proyecto
 
-Un formulario en la página de contacto.
+Construir un sitio web estático aplicando HTML semántico y estilos CSS básicos, respetando las buenas prácticas aprendidas durante el curso.
 
-Un footer y replicarlo en todos tus HTML.
+## ✅ Requerimientos
 
-Etiquetas multimedia como img e iframes.
+El proyecto debe incluir:
 
-Aplicar con CSS las propiedades vistas hasta el momento para modificar textos, encabezados, img, colores, background a un archivo HTML de la actividad N°1 “Wireframe”.
+- 🔗 Un **menú de navegación** con una lista no ordenada, presente en las cinco secciones del sitio.
+- 📄 **Cinco archivos HTML**, uno por cada sección del sitio, enlazados entre sí mediante **enlaces relativos**.
+- 🧾 Un **formulario de contacto** funcional en la página correspondiente.
+- 📎 Un **footer común**, replicado en todos los archivos HTML.
+- 🖼️ Uso de **etiquetas multimedia**, como:
+  - `<img>` para imágenes
+  - `<iframe>` para incrustar contenido externo
+- 🎨 Aplicación de **estilos CSS** (en archivo separado) sobre:
+  - Colores, fondos, tamaños de texto, encabezados e imágenes
+  - Menú de navegación (por ejemplo: quitar subrayado de los enlaces y personalizar colores)
 
-Ejemplo: Modificar el color de todos los links que forman parte del menú, y retirarles el subrayado predeterminado.
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3
+
+## 📁 Estructura del proyecto
+
+```plaintext
+cursoWeb/
+├── index.html
+├── contacto.html
+├── servicios.html
+├── nosotros.html
+├── galeria.html
+├── css/
+│   └── estilos.css
+└── img/
+    └── logo.png
