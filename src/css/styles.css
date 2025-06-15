@@ -1,36 +1,62 @@
+/* Reset */
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* Selectores de Elemento */
-html {
-  height: 100vh;
+
+/* Layout base */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Header */
 header {
   background-color: #bee1e6;
-  height: 75px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 40%;
-}
-body {
-  background-color: #e1f7fa;
-}
-footer {
-  bottom: 0;
-  background-color: #e1f7fa;
-  color: #333;
-  text-align: center;
-  padding: 5px;
-  margin-top: 10px;
+  height: 50px;
+  padding: 5px 0 5px 40%;
   width: 100%;
 }
 
-img {
-  width: 50px;
+/* Footer */
+footer {
+  background-color: #e1f7fa;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Contenedor principal */
+.content {
+  display: flex;
+  flex: 1; /* hace que empuje el footer hacia abajo si hay poco contenido */
+}
+
+/* Navegación lateral */
+.menu {
+  width: 200px;
+  height: 180px;
+  padding: 15px 0;
+  background-color: #bee1e6;
+}
+
+/* Área de contenido */
+.contenido {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+}
+
+/* Tipografía */
 h1 {
   font-family: cursive;
+  display: inline-block;
 }
 
 h2 {
@@ -42,18 +68,24 @@ p {
   margin: 15px;
 }
 
-ul {
+/* Imágenes */
+img {
+  width: 50px;
+}
+
+.LogoPrincipal {
+  height: 30px;
+  width: 30px;
   margin: 2px;
-  text-align: center;
-  list-style: none;
-  padding-inline-start: 5px;
+  padding-top: 5px;
 }
 
-li {
-  margin: 10px 0px 10px 0px;
-  display: block;
+.icon {
+  height: 18px;
+  width: 20px;
 }
 
+/* Enlaces */
 li a {
   color: #027688;
   text-decoration: none;
@@ -65,44 +97,31 @@ li a:hover {
   text-decoration: underline;
 }
 
-/* Selectores de Clase */
-.content {
-  display: flex;
-  min-height: 55vh;
-}
-.menu {
-  width: 150px;
-  height: 120px;
-  padding: 2px;
-  margin: 15px 0px 15px 0px;
+/* Lista del menú */
+ul {
+  margin: 2px;
+  text-align: center;
+  list-style: none;
+  padding-inline-start: 5px;
 }
 
-.contenido {
-  width: 100%;
-  padding: 5px;
-  margin-left: 5px;
-  background-color: white;
+li {
+  margin: 10px 0;
+  display: block;
 }
 
-.LogoPrincipal {
-  height: 30px;
-  width: 30px;
-  margin-left: 10%;
-}
-.icon {
-  height: 18px;
-  width: 20px;
-}
+/* Enlaces de contacto */
 .linkContacto {
   color: #027688;
   text-decoration: none;
 }
+
 .linkContacto:hover {
   color: #026473;
   text-decoration: underline;
 }
 
-/* Selectores de ID */
+/* Estilos por ID */
 #idHistoria-subtitulo {
   color: #4a4e69;
   margin-left: 10px;
