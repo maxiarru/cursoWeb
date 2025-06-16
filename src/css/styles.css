@@ -20,7 +20,6 @@ header {
   padding: 5px 0 5px 40%;
   width: 100%;
 }
-
 /* Footer */
 footer {
   background-color: #e1f7fa;
@@ -41,9 +40,9 @@ footer {
 /* Navegación lateral */
 .menu {
   width: 200px;
-  height: 180px;
+  height: 100%;
   padding: 15px 0;
-  background-color: #bee1e6;
+  background-color: #65c4d2;
 }
 
 /* Área de contenido */
@@ -87,7 +86,7 @@ img {
 
 /* Enlaces */
 li a {
-  color: #027688;
+  color: #ffffff;
   text-decoration: none;
   display: block;
 }
@@ -97,8 +96,18 @@ li a:hover {
   text-decoration: underline;
 }
 
+ol li h3 {
+  margin-left: 40%;
+  margin-top: 10px;
+}
+ol li img {
+  margin-left: 40%;
+}
+ol li p {
+  margin-left: 20%;
+}
 /* Lista del menú */
-ul {
+.menu ul {
   margin: 2px;
   text-align: center;
   list-style: none;
