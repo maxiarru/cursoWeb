@@ -2,43 +2,80 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Huellitas</title>
   </head>
   <body>
+    <nav class="menu">
+      <i class="bi bi-list"></i>
+      <ul>
+        <li><a href="index.html">¿Quienes Somos?</a></li>
+        <li><a href="comoAdoptar.html">Como Adoptar</a></li>
+        <li>Dar en Adopcion</li>
+        <li><a href="historias.html">Historias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
     <header>
       <h1>Huellitas</h1>
       <img src="../img/HuellitaLogo.png" class="LogoPrincipal" />
     </header>
     <div class="content">
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">¿Quienes Somos?</a></li>
-          <li><a href="comoAdoptar.html">Como Adoptar</a></li>
-          <li>Dar en Adopcion</li>
-          <li><a href="historias.html">Historias</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="contenido">
-        <h2>No importa el motivo, ingresa ese animalito que necesita amor.</h2>
-        <form action="" method="post">
-          <!--de momento el action no envia datos a ningun lado-->
-          <label for="nombre">Nombre de la mascota:</label><br />
-          <input type="text" id="nombre" name="nombre" required /><br />
-          <label for="datos">Datos:</label><br />
-          <input type="text" id="datos" name="datos" required /><br />
-          <label for="gustos">Gustos:</label><br />
-          <input type="text" id="gustos" name="gustos" required /><br /><br />
+      <h2>No importa el motivo, ingresa ese animalito que necesita amor.</h2>
+      <br />
+      <form action="" method="post">
+        <!--de momento el action no envia datos a ningun lado-->
+        <label for="nombre" class="mb-2">Nombre de la mascota:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          class="form-control w-25 mb-4"
+          required
+        />
+        <label for="datos" class="mb-2">Datos:</label><br />
+        <textarea
+          id="datos"
+          name="datos"
+          class="form-control w-50 mb-4"
+          rows="3"
+          required
+        >
+        </textarea>
+        <label for="gustos" class="mb-2">Gustos:</label><br />
+        <textarea
+          id="gustos"
+          name="gustos"
+          class="form-control w-50 mb-4"
+          rows="3"
+          required
+        ></textarea>
+        <form>
           <input
             type="file"
             id="mascota"
             name="mascota"
             accept="image/*"
-          /><br /><br />
-          <input type="submit" value="Enviar" />
+            class="d-none"
+          />
+          <label for="mascota" class="btn btn-secondary mb-4">
+            Seleccionar Archivo
+          </label>
         </form>
-      </div>
+        <button type="submit" class="btn btn-secondary" value="Enviar">
+          Enviar
+        </button>
+      </form>
     </div>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>
