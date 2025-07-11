@@ -164,7 +164,7 @@ li {
     min-height: 50px;
   }
   .menu:hover {
-    width: 180px;
+    width: 100%;
     min-height: 100%;
   }
   footer {
