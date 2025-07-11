@@ -158,3 +158,20 @@ li {
   margin: 5px 1px 5px 5px;
   font-family: cursive;
 }
+@media (max-width: 768px) {
+  .menu {
+    height: 6vh; /* igual que el header */
+    min-height: 50px;
+  }
+  .menu:hover {
+    width: 200px;
+    min-height: 100%;
+  }
+  footer {
+    height: 100%;
+    background-color: white;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
