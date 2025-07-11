@@ -158,7 +158,7 @@ li {
   margin: 5px 1px 5px 5px;
   font-family: cursive;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .menu {
     height: 6vh; /* igual que el header */
     min-height: 50px;
