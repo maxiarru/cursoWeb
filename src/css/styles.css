@@ -28,7 +28,13 @@ body {
 .menu:hover {
   width: 200px;
 }
-
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
 /* Header */
 header {
   grid-area: header;
@@ -158,10 +164,11 @@ li {
   margin: 5px 1px 5px 5px;
   font-family: cursive;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .menu {
     height: 6vh; /* igual que el header */
     min-height: 50px;
+    width: 100%;
   }
   .menu:hover {
     width: 100%;
@@ -171,7 +178,13 @@ li {
     height: 100%;
     background-color: white;
   }
+  footer p {
+    font-size: 0.9rem;
+  }
   p {
     font-size: 1.4rem;
+  }
+  li p {
+    font-size: 1rem;
   }
 }
