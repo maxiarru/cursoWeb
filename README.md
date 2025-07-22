@@ -23,7 +23,7 @@ El proyecto debe incluir:
   - Uso de Bootstrap
   - Grid/Flex
   - github (consola/desktop)
-  - github pages --> https://maxiarru.github.io/cursoWeb/src/paginas/quienesSomos.html
+  - github pages --> https://maxiarru.github.io/cursoWeb
 
 ## 🛠️ Tecnologías utilizadas
 
