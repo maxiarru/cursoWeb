@@ -20,6 +20,10 @@ El proyecto debe incluir:
 - 🎨 Aplicación de **estilos CSS** (en archivo separado) sobre:
   - Colores, fondos, tamaños de texto, encabezados e imágenes
   - Menú de navegación (por ejemplo: quitar subrayado de los enlaces y personalizar colores)
+  - Uso de Bootstrap
+  - Grid/Flex
+  - github (consola/desktop)
+  - github pages --> https://maxiarru.github.io/cursoWeb/src/paginas/quienesSomos.html
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -33,13 +37,14 @@ cursoWeb/
 └── Huellitas/
     ├── .git/
     ├── README.md
+    ├── index.html (unicamente para que funcione github pages y redireccionar al proyecto)
     └── src/
         ├── css/
         │   └── style.css
         ├── img/
         │   └── (imágenes del sitio)
         ├── pag/
-        │   ├── index.html
+        │   ├── quienesSomos.html
         │   ├── contacto.html
         │   ├── servicios.html
         │   ├── nosotros.html
