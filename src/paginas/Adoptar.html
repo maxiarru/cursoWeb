@@ -75,33 +75,47 @@
       <h3 id="idAdoptar-subtitulo" class="text-secundary mb-4">
         Uno de ellos te esta esperando:
       </h3>
-      <ol>
-        <li>
-          <h3>Lobito</h3>
-          <img src="../img/lobito.png" />
-          <p>peso: 36kg - pelo: Largo - Gustos: Correr Gatos.</p>
-        </li>
-        <li>
-          <h3>Roco</h3>
-          <img src="../img/roco.png" />
-          <p>peso: 11kg - pelo: Corto - Gustos: Paseos.</p>
-        </li>
-        <li>
-          <h3>Thanos</h3>
-          <img src="../img/thanos.png" />
-          <p>peso: 22kg - pelo: Corto - Gustos: Atrapar cosas.</p>
-        </li>
-        <li>
-          <h3>Rambito</h3>
-          <img src="../img/rambito.png" />
-          <p>peso: 5kg - pelo: Corto - Gustos: Dormir a upa.</p>
-        </li>
-        <li>
-          <h3>Bono</h3>
-          <img src="../img/bono.png" />
-          <p>peso: 13kg - pelo: Corto - Gustos: Ama los peluches.</p>
-        </li>
-      </ol>
+      <div id="carruselAdopcion" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/lobito.png" class="d-block w-100" alt="Lobito" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lobito</h5>
+              <p>peso: 36kg - pelo: Largo - Gustos: Correr Gatos.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../img/roco.png" class="d-block w-100" alt="Roco" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Roco</h5>
+              <p>peso: 11kg - pelo: Corto - Gustos: Paseos.</p>
+            </div>
+          </div>
+
+          <!-- Repetí lo mismo para Thanos, Rambito, Bono -->
+        </div>
+
+        <!-- Controles -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carruselAdopcion"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carruselAdopcion"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
     </main>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>

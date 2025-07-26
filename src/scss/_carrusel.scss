@@ -1,0 +1,50 @@
+@use "variables";
+
+#carruselAdopcion {
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    display: block;
+
+    h5,
+    p {
+      color: white;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption {
+      display: block !important; // 🔥 fuerza visibilidad en mobile
+      bottom: 10px;
+      padding: 0.5rem;
+
+      h5,
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    img {
+      height: 250px;
+    }
+  }
+}

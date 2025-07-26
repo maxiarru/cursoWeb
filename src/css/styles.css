@@ -71,6 +71,7 @@ img {
 
 .img-index {
   width: 50%;
+  margin: 20px;
 }
 
 .LogoPrincipal {
@@ -144,10 +145,10 @@ footer p {
   }
 }
 .map-container {
-  max-width: 600px;
+  max-width: 1000px;
 }
 .map-container iframe {
-  width: 100%;
+  width: 600px;
   aspect-ratio: 4/3;
   border: 0;
   display: block;
@@ -157,6 +158,9 @@ footer p {
 @media (max-width: 768px) {
   .map-container {
     max-width: 100%;
+  }
+  .map-container iframe {
+    width: 100%;
   }
 }
 
@@ -168,6 +172,49 @@ footer p {
 .btn-personalizado:hover {
   background-color: rgb(47.2613065327, 147.0351758794, 161.7386934673);
   scale: 1.2;
+}
+
+#carruselAdopcion {
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#carruselAdopcion .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  display: block;
+}
+#carruselAdopcion .carousel-caption h5,
+#carruselAdopcion .carousel-caption p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+#carruselAdopcion img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #carruselAdopcion .carousel-caption {
+    display: block !important;
+    bottom: 10px;
+    padding: 0.5rem;
+  }
+  #carruselAdopcion .carousel-caption h5,
+  #carruselAdopcion .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  #carruselAdopcion img {
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
