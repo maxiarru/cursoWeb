@@ -1,0 +1,15 @@
+@use "variables";
+@use "sass:color"; // necesario para usar color.scale o color.adjust
+.btn-personalizado {
+  background-color: variables.$color-botones;
+  color: white;
+  border: none;
+
+  &:hover {
+    background-color: color.adjust(
+      variables.$color-principal,
+      $lightness: -20%
+    );
+    scale: 1.2;
+  }
+}

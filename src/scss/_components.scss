@@ -1,0 +1,60 @@
+@use "variables";
+
+img {
+  width: 50px;
+}
+
+.img-index {
+  width: 50%;
+}
+.LogoPrincipal {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+  margin-right: 50px;
+}
+
+.menuIcon {
+  height: 20px;
+  width: 20px;
+  opacity: 75%;
+}
+
+.icon {
+  height: 18px;
+  width: 20px;
+}
+
+.contacto {
+  margin: 10px;
+}
+
+.linkContacto {
+  color: variables.$color-contacto;
+  text-decoration: none;
+
+  &:hover {
+    color: variables.$color-hover;
+    text-decoration: underline;
+  }
+}
+
+li {
+  margin: 10px 0;
+  display: block;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      color: variables.$color-hover;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

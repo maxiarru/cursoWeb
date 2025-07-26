@@ -1,0 +1,21 @@
+@use "variables";
+
+h2 {
+  margin-bottom: 5px;
+  color: variables.$color-subtitulos;
+}
+
+p {
+  margin: 15px;
+}
+
+#idHistoria-subtitulo {
+  color: variables.$color-subtitulos;
+  margin-top: 50px;
+}
+
+#idAdoptar-subtitulo {
+  color: variables.$color-subtitulos;
+  font-family: variables.$fuente-cursiva;
+  margin-top: 10px;
+}
