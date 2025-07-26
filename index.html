@@ -8,30 +8,72 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="src/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huellitas</title>
   </head>
   <body>
-    <nav class="menu">
-      <i class="bi bi-list"></i>
-      <ul>
-        <li>¿Quienes Somos?</li>
-        <li><a href="src/paginas/Adoptar.html">Adoptar</a></li>
-        <li><a href="src/paginas/darEnAdopcion.html">Dar en Adopcion</a></li>
-        <li><a href="src/paginas/historias.html">Historias</a></li>
-        <li><a href="src/paginas/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
     <header>
-      <h1>Huellitas</h1>
-      <img src="src/img/HuellitaLogo.png" class="LogoPrincipal" />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Marca con logo + texto -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="src/img/HuellitaLogo.png"
+              alt="Logo Huellitas"
+              width="32"
+              height="32"
+              class="me-2"
+            />
+            <span class="fs-4 fw-bold">Huellitas</span>
+          </a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú colapsable -->
+          <div
+            class="collapse navbar-collapse"
+            id="navbarToggleExternalContent"
+          >
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link disabled">¿Quiénes Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/paginas/Adoptar.html">Adoptar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/paginas/darEnAdopcion.html"
+                  >Dar en Adopción</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/paginas/historias.html"
+                  >Historias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="content container">
+    <main class="content container">
       <p class="lead">
         Los animales son seres incondicionales nos regalan su amor, su compañía
         y su lealtad sin pedir nada a cambio. Pero muchos de ellos terminan en
@@ -47,9 +89,15 @@
         compartir un rato con ellos y, si querés, sumarte como voluntario para
         ser parte de esta gran familia que nunca deja de crecer.
       </p>
-    </div>
+      <img src="/src/img/huellitasSede.jpg" alt="Sede huellitas" />
+    </main>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

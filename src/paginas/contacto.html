@@ -17,21 +17,63 @@
     <title>Huellitas</title>
   </head>
   <body>
-    <nav class="menu">
-      <i class="bi bi-list"></i>
-      <ul>
-        <li><a href="../../index.html">¿Quienes Somos?</a></li>
-        <li><a href="Adoptar.html">Adoptar</a></li>
-        <li><a href="darEnAdopcion.html">Dar en Adopcion</a></li>
-        <li><a href="historias.html">Historias</a></li>
-        <li>Contacto</li>
-      </ul>
-    </nav>
     <header>
-      <h1>Huellitas</h1>
-      <img src="../img/HuellitaLogo.png" class="LogoPrincipal" />
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Marca con logo + texto -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="../img/HuellitaLogo.png"
+              alt="Logo Huellitas"
+              width="32"
+              height="32"
+              class="me-2"
+            />
+            <span class="fs-4 fw-bold">Huellitas</span>
+          </a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú colapsable -->
+          <div
+            class="collapse navbar-collapse"
+            id="navbarToggleExternalContent"
+          >
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">¿Quienes Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Adoptar.html">Adoptar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="darEnAdopcion.html"
+                  >Dar en Adopción</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historias.html">Historias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="content">
+    <main class="content">
       <div class="contacto">
         <img class="icon" src="../img/gmail.png" width="20" />
         <a class="linkContacto" href="mailto:huellitas.proy@gmail.com"
@@ -49,19 +91,24 @@
       </div>
       <div class="contacto">
         <h2>Encontranos Aqui:</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.9943417270456!2d-58.57572971248776!3d-34.42005348203396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5fb869585ab%3A0x5eef4daf8daab42a!2sCasita%20de%20Adopciones%20en%20Tigre!5e0!3m2!1ses!2sar!4v1753226067735!5m2!1ses!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.9943417270456!2d-58.57572971248776!3d-34.42005348203396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5fb869585ab%3A0x5eef4daf8daab42a!2sCasita%20de%20Adopciones%20en%20Tigre!5e0!3m2!1ses!2sar!4v1753226067735!5m2!1ses!2sar"
+            class="map-responsive"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-    </div>
+    </main>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
