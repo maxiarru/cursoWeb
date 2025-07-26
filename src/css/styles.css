@@ -65,6 +65,18 @@ p {
   margin-top: 10px;
 }
 
+.texto-adopcion {
+  font-size: 1.1rem;
+  color: #4a4e69;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .texto-adopcion {
+    font-size: 1rem;
+  }
+}
+
 img {
   width: 50px;
 }
@@ -180,6 +192,10 @@ footer p {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#carruselAdopcion .carousel-control-prev-icon,
+#carruselAdopcion .carousel-control-next-icon {
+  filter: invert(100%);
 }
 #carruselAdopcion .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);

@@ -19,3 +19,13 @@ p {
   font-family: variables.$fuente-cursiva;
   margin-top: 10px;
 }
+.texto-adopcion {
+  font-size: 1.1rem;
+  color: variables.$color-subtitulos;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
