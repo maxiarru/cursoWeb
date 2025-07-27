@@ -24,6 +24,9 @@ El proyecto debe incluir:
   - Grid/Flex
   - github (consola/desktop)
   - github pages --> https://maxiarru.github.io/cursoWeb
+  - Uso de Animaciones (keyframe)
+  - Full Responsive para mobile
+  - Sass aplicado con nesting y variables
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -37,14 +40,17 @@ cursoWeb/
 └── Huellitas/
     ├── .git/
     ├── README.md
-    ├── index.html (unicamente para que funcione github pages y redireccionar al proyecto)
+    ├── index.html
     └── src/
         ├── css/
         │   └── style.css
+        │   └── style.css.map
+        ├── scss/
+        │   └── (varias clases .scss)
         ├── img/
         │   └── (imágenes del sitio)
         ├── pag/
-        │   ├── quienesSomos.html
+        │   ├── Voluntarios.html
         │   ├── contacto.html
         │   ├── servicios.html
         │   ├── nosotros.html
