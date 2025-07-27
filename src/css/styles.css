@@ -134,6 +134,19 @@ li p {
   font-size: 1rem;
 }
 
+.boton-animado {
+  animation: rebotar 0.8s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes rebotar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1) translateY(-5px);
+  }
+}
 footer {
   display: flex;
   justify-content: center;
