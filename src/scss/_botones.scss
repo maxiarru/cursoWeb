@@ -13,3 +13,49 @@
     scale: 1.2;
   }
 }
+
+.btn-circular-hover {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$color-MG;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  gap: 0.5rem;
+  position: relative;
+
+  .icono-like {
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+
+  .texto-hover {
+    opacity: 0;
+    display: none;
+  }
+
+  &:hover {
+    width: 160px;
+    border-radius: 10px;
+    background-color: variables.$color-MG;
+
+    .texto-hover {
+      opacity: 1;
+      white-space: nowrap;
+      font-size: 1rem;
+      transition: opacity 0.3s ease;
+      display: inline;
+    }
+
+    .icono-like {
+      transform: scale(1.2);
+    }
+  }
+}
