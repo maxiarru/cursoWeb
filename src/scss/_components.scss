@@ -59,16 +59,12 @@ li {
     font-size: 1rem;
   }
 }
-.boton-animado {
-  animation: rebotar 0.8s ease-in-out infinite alternate;
-  transform-origin: bottom;
-}
+input,
+textarea {
+  min-width: 400px;
 
-@keyframes rebotar {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1) translateY(-5px);
+  @media (max-width: 768px) {
+    min-width: 100%;
+    padding: 0 1rem;
   }
 }

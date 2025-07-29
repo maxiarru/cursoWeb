@@ -14,7 +14,34 @@
   }
 }
 
-.btn-circular-hover {
+@keyframes latido {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.btn-enviar-llamativo {
+  @extend .btn-personalizado;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  animation: latido 1.5s infinite;
+  background-color: color.adjust(variables.$color-botones, $lightness: -10%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: color.adjust(
+      variables.$color-principal,
+      $lightness: -25%
+    );
+    transform: scale(1.1);
+  }
+}
+
+.btn-circular-animado {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -26,36 +53,65 @@
   width: 60px;
   height: 60px;
   overflow: hidden;
-  transition: all 0.4s ease;
-  gap: 0.5rem;
   position: relative;
+  opacity: 0;
+  animation: aparecerExpandir 1.2s ease-out forwards;
+  gap: 0.5rem;
 
   .icono-like {
     font-size: 1.2rem;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-
-  .texto-hover {
     opacity: 0;
-    display: none;
+    animation: aparecerIcono 1s ease-out 0.8s forwards;
   }
 
-  &:hover {
+  .texto-animado {
+    opacity: 0;
+    white-space: nowrap;
+    font-size: 1rem;
+    animation: aparecerTexto 1s ease-out 1.2s forwards;
+  }
+}
+
+@keyframes aparecerExpandir {
+  0% {
+    opacity: 0;
+    width: 60px;
+    border-radius: 50%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
     width: 160px;
     border-radius: 10px;
-    background-color: variables.$color-MG;
+    opacity: 1;
+  }
+}
 
-    .texto-hover {
-      opacity: 1;
-      white-space: nowrap;
-      font-size: 1rem;
-      transition: opacity 0.3s ease;
-      display: inline;
-    }
+@keyframes aparecerIcono {
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
 
-    .icono-like {
-      transform: scale(1.2);
-    }
+@keyframes aparecerTexto {
+  to {
+    opacity: 1;
+  }
+}
+.boton-animado {
+  animation: rebotar 2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes rebotar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1) translateY(-10px);
+    filter: brightness(1.8);
+    color: black;
   }
 }
