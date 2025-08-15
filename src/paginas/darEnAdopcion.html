@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <link
@@ -10,7 +10,11 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huellitas</title>
+    <title>Huellitas: dar en adopción</title>
+    <meta
+      name="description"
+      content="Publicá una mascota para dar en adopción en Huellitas. Completá los datos y coordinamos el proceso de adopción responsable."
+    />
   </head>
   <body>
     <header>
@@ -19,7 +23,7 @@
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img
               src="../img/HuellitaLogo.png"
-              alt="Logo Huellitas"
+              alt="Logo Huellitas, adopción y rescate"
               class="me-2"
             />
             <span class="fs-4 fw-bold">Huellitas</span>
@@ -66,7 +70,8 @@
       </nav>
     </header>
     <main class="content">
-      <h2>Ingresa sus datos</h2>
+      <h1 class="h4 fw-bold mt-2 mb-3">Huellitas: dar en adopción</h1>
+      <h2 class="h5 text-secondary mb-4">Ingresa sus datos</h2>
       <form action="" method="post">
         <label for="nombre" class="mb-2">Nombre de la mascota:</label>
         <input
@@ -93,22 +98,27 @@
           rows="3"
           required
         ></textarea>
-        <form>
-          <input
-            type="file"
-            id="mascota"
-            name="mascota"
-            accept="image/*"
-            class="d-none"
-          />
-          <label for="mascota" class="btn btn-personalizado mb-4">
-            Seleccionar Archivo
-          </label>
-        </form>
-        <button type="submit" class="btn btn-enviar-llamativo" value="Enviar">
-          Enviar
-        </button>
+
+        <input
+          type="file"
+          id="mascota"
+          name="mascota"
+          accept="image/*"
+          class="d-none"
+        />
+        <label for="mascota" class="btn btn-personalizado mb-4">
+          Seleccionar Archivo
+        </label>
+        <div class="mb-4">
+          <button type="submit" class="btn btn-enviar-llamativo" value="Enviar">
+            Enviar
+          </button>
+        </div>
       </form>
+      <p class="text-muted small">
+        * Recordá que promovemos la adopción responsable: pedimos datos básicos,
+        seguimiento y compromiso de castración cuando corresponda.
+      </p>
     </main>
     <footer>
       <p>© 2025 Huellitas - siempre con los que nos necesitan.</p>
